@@ -51,7 +51,13 @@ pip install -r requirements.txt
 
 ### 3. Configuração das variáveis de ambiente
 
-Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+Configure as chaves de API no arquivo `.env`:
+
+```
+cp .env.example .env
+```
+
+Edite o arquivo .env e edite a chave do google e demais propriedades como modelo abaixo:
 
 ```env
 # Configurações do PostgreSQL
@@ -83,7 +89,7 @@ docker compose up -d
 
 **Aguarde o banco subir completamente** (pode levar alguns minutos na primeira execução).
 
-### 5. Verificar conexão com o banco (opcional)
+### 5. Verificar e criar conexão com o banco
 
 ```bash
 python src/check_db.py
