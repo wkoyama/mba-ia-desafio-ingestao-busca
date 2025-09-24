@@ -95,7 +95,7 @@ docker compose up -d
 python src/check_db.py
 ```
 
-Este comando verifica se a conexão com o PostgreSQL está funcionando.
+Este comando verifica se a conexão com o PostgreSQL está funcionando, caso o banco não exista ele cria.
 
 ### 6. Ingestão do PDF
 
